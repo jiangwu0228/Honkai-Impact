@@ -10,6 +10,7 @@ function MeetupItem(props) {
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
+          <h3>{props.bio}</h3>
           <address>{props.address}</address>
         </div>
         <div className={classes.actions}>
