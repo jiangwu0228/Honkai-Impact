@@ -13,7 +13,8 @@ function HomePage(props) {
   return (
     <Fragment>
       <Head>
-          <title>Honkai Impact</title>
+        <title>Honkai Impact</title>
+        <meta name="description" content="kind of wiki of Honkai Impact" />
       </Head>
       <MeetupList meetups={props.meetups} />
     </Fragment>
