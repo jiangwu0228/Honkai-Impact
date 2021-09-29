@@ -1,0 +1,9 @@
+{
+  "_id": { "$oid": "615423e25177ad5df3e8843f" },
+  "data": {
+    "title": "Kiana·Kaslana",
+    "image": "https://uploadstatic-sea.mihoyo.com/contentweb/20200814/2020081419354392790.png",
+    "birthday": "7/12/1998",
+    "bio": "这就是……我的承诺。"
+  }
+}
