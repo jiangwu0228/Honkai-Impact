@@ -31,12 +31,12 @@ function NewMeetupForm(props) {
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
-          <label htmlFor="title">Meetup Title</label>
+          <label htmlFor="title">Valkyrise Name</label>
           <input type="text" required id="title" ref={titleInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="image">Meetup Image</label>
-          <input type="url" required id="image" ref={imageInputRef} />
+          <label htmlFor="image">Valkyrise Image</label>
+          <input type="url" required id="image" ref={imageInputRef} placeholder='Image URL Only'/>
         </div>
         <div className={classes.control}>
           <label htmlFor="birthday">Birthday</label>
@@ -52,7 +52,7 @@ function NewMeetupForm(props) {
           ></textarea>
         </div>
         <div className={classes.actions}>
-          <button>Add Meetup</button>
+          <button>Add Valkyrise</button>
         </div>
       </form>
     </Card>

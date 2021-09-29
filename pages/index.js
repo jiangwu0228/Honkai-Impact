@@ -1,5 +1,7 @@
+import Head from "next/head";
 import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList";
+import { Fragment } from "react";
 // import { useEffect, useState } from "react";
 
 function HomePage(props) {
@@ -8,7 +10,14 @@ function HomePage(props) {
   //     //send a http request and fatch data
   //     setLoadedMeetups(DUMMY_MEETUPS);
   //   }, []);
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <Fragment>
+      <Head>
+          <title>Honkai Impact</title>
+      </Head>
+      <MeetupList meetups={props.meetups} />
+    </Fragment>
+  );
 }
 
 // export async function getServerSideProps(context) {
@@ -50,5 +59,3 @@ export async function getStaticProps() {
 }
 
 export default HomePage;
-
-
