@@ -1,5 +1,5 @@
-import MeetUpList from "../components/meetups/MeetupList";
-import { useEffect, useState } from "react";
+import MeetupList from "../components/meetups/MeetupList";
+// import { useEffect, useState } from "react";
 
 const DUMMY_MEETUPS = [
   {
@@ -51,15 +51,38 @@ const DUMMY_MEETUPS = [
     address: "13/4/1997",
     bio: "向我朝拜吧，垃圾们！",
   },
+//   {
+//     id: "m7",
+//     title: "Random wife",
+//     image: "https://api.blogbig.cn/random/api.php",
+//     address: "13/4/1997",
+//     bio: "向我朝拜吧，垃圾们！",
+//   },
+  {
+    id: "m8",
+    title: "Random wife",
+    image: "https://www.dmoe.cc/random.php",
+    address: "13/4/1997",
+    bio: "向我朝拜吧，垃圾们！",
+  },
 ];
 
-function HomePage() {
-  const [loadedMeetups, setLoadedMeetups] = useState([]);
-  useEffect(() => {
-    //send a http request and fatch data
-    setLoadedMeetups(DUMMY_MEETUPS);
-  }, []);
-  return <MeetUpList meetups={loadedMeetups} />;
+function HomePage(props) {
+  //   const [loadedMeetups, setLoadedMeetups] = useState([]);
+  //   useEffect(() => {
+  //     //send a http request and fatch data
+  //     setLoadedMeetups(DUMMY_MEETUPS);
+  //   }, []);
+  return <MeetupList meetups={props.meetups} />;
+}
+
+export async function getStaticProps() {
+  //fetch data from an API
+  return {
+    props: {
+      meetups: DUMMY_MEETUPS
+    }
+  };
 }
 
 export default HomePage;
