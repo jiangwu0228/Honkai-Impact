@@ -51,13 +51,13 @@ const DUMMY_MEETUPS = [
     address: "13/4/1997",
     bio: "向我朝拜吧，垃圾们！",
   },
-//   {
-//     id: "m7",
-//     title: "Random wife",
-//     image: "https://api.blogbig.cn/random/api.php",
-//     address: "13/4/1997",
-//     bio: "向我朝拜吧，垃圾们！",
-//   },
+  //   {
+  //     id: "m7",
+  //     title: "Random wife",
+  //     image: "https://api.blogbig.cn/random/api.php",
+  //     address: "13/4/1997",
+  //     bio: "向我朝拜吧，垃圾们！",
+  //   },
   {
     id: "m8",
     title: "Random wife",
@@ -76,12 +76,24 @@ function HomePage(props) {
   return <MeetupList meetups={props.meetups} />;
 }
 
+// export async function getServerSideProps(context) {
+//   const req = context.req;
+//   const res = context.res;
+//   fatch data from an API
+//   return {
+//     props: {
+//       meetups: DUMMY_MEETUPS,
+//     },
+//   };
+// }
+
 export async function getStaticProps() {
   //fetch data from an API
   return {
     props: {
-      meetups: DUMMY_MEETUPS
-    }
+      meetups: DUMMY_MEETUPS,
+    },
+    revalidate: 1,
   };
 }
 
