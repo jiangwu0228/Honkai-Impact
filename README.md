@@ -1,3 +1,7 @@
+This is dummy project using nextjs and mongodb.
+
+you can simply add some data show Valkyrise.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
