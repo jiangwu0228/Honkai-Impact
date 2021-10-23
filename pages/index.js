@@ -7,7 +7,7 @@ import { Fragment } from "react";
 function HomePage(props) {
   //   const [loadedMeetups, setLoadedMeetups] = useState([]);
   //   useEffect(() => {
-  //     //send a http request and fatch data
+  //     //send a http request and fetch data
   //     setLoadedMeetups(DUMMY_MEETUPS);
   //   }, []);
   return (
@@ -24,7 +24,7 @@ function HomePage(props) {
 // export async function getServerSideProps(context) {
 //   const req = context.req;
 //   const res = context.res;
-//   fatch data from an API
+//   fetch data from an API
 //   return {
 //     props: {
 //       meetups: DUMMY_MEETUPS,
