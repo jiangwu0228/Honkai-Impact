@@ -25,8 +25,8 @@ function NewMeetupPage() {
   return (
     <Fragment>
       <Head>
-        <title>Add Valkyrise</title>
-        <meta name="description" content="add a new valkyrise" />
+        <title>Add Valkyries</title>
+        <meta name="description" content="add a new valkyries" />
       </Head>
       <NewMeetupForm onAddMeetup={addMeetupHandler} />
     </Fragment>
